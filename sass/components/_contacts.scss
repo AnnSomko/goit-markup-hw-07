@@ -1,0 +1,41 @@
+@import 'utils/variables.scss';
+
+
+.contacts__list {
+    display: flex;
+    margin-left: auto;    
+}
+
+.contacts__item {
+    margin-left: 30px;
+}
+
+.contacts__icon {
+    vertical-align: middle;
+    fill: currentColor;
+    transition: fill $delay $timingFunc;
+
+    &:hover {
+        fill: 'focusColor';
+    }
+}
+
+.mail,
+.phone {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 0.02em; 
+    cursor: pointer;
+    transition: color $delay $timingFunc;
+
+    
+    &:hover,
+    &:focus {
+        color: 'focusColor';
+    }
+
+    &__text {
+        margin-left: 10px;
+    }
+}

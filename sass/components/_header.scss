@@ -1,0 +1,16 @@
+@import 'utils/variables.scss';
+
+.header {
+    border-bottom: 1px solid 'borderColor';
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}

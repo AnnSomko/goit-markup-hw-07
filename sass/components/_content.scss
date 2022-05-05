@@ -1,0 +1,59 @@
+@import 'utils/variables.scss';
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.content {
+    padding-bottom: 0px;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        margin-right: 30px;
+        flex-basis: 270px;
+    }
+
+    &__item::before {
+    content: "";
+    width: 270px;
+    height: 120px;
+    background: 'btnColor' url(../images/antenna.svg) no-repeat center;
+    display: block;
+    margin-bottom: 30px;
+    }
+
+    &__item:nth-child(4n) {
+        margin-right: 0px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        color: 'textColor';
+    }
+
+    &__title {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.15;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: 'brandColor';
+
+        margin-bottom: 10px;
+    }
+}
+
+@each $item in clock, diagram, astronaut {
+    .icon-#{$item}::before {
+      background-image: url('../images/#{$item}.svg');
+    }
+  }
+
+  

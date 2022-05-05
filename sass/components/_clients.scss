@@ -1,0 +1,38 @@
+@import 'utils/variables.scss';
+
+.clients__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    &__item {
+        margin-right: 30px;
+    }
+
+    &__item:nth-child(6n) {
+        margin-right: 0px;
+    }
+
+    &__link {
+        width: 170px;
+        height: 92px;
+        border: 1px solid 'iconColor';
+        border-radius: 4px;
+        cursor: pointer;
+        color: 'iconColor';
+        fill: 'iconColor';
+    }
+
+    &__icon {
+        display: block;
+        margin: 16px auto;
+        fill: currentColor;
+        transition: color $delay $timingFunc, fill $delay $timingFunc;
+    }
+
+    &__link:hover {
+        color: 'focusColor';
+        fill: 'focusColor';
+        border: 1px solid 'focusColor';
+    }
+}   
