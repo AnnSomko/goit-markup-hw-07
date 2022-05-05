@@ -1,5 +1,3 @@
-@import 'utils/variables.scss';
-
 .modal__form {
     font-weight: 400;
     font-size: 12px;
@@ -12,8 +10,8 @@
     position: relative;
 
     &:focus-within > .modal__icon, .modal__input, .modal__textarea {
-        fill: var(--focus-color);
-        outline-color: var(--focus-color);
+        fill: $focusColor;
+        outline-color: $focusColor;
         cursor: pointer;
     }
 }

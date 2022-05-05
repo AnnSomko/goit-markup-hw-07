@@ -1,12 +1,10 @@
-@import 'utils/variables.scss';
-
 .footer {
-    background-color: 'mainColor';
+    background-color: $mainColor;
     padding-top: 60px;
     padding-bottom: 60px;
 
     &-logo {
-        color: 'titleColor';
+        color: $titleColor;
         margin-bottom: 20px;
     }
 
@@ -18,7 +16,7 @@
         line-height: 16px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: 'titleColor';
+        color: $titleColor;
     }
     
 }
@@ -37,7 +35,7 @@
     }
 
     &__item:first-child {
-        color: 'titleColor';
+        color: $titleColor;
     }
 
     &__item:not(:last-child) {

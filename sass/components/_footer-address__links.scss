@@ -1,6 +1,3 @@
-@import 'utils/variables.scss';
-@import 'components/footer-adress__info';
-
 .address__title {
     @extend .footer__title;
 }
@@ -25,14 +22,14 @@
         }
         
         &-item:hover {
-            background-color: 'focusColor';
+            background-color: $focusColor;
         }
 }
 
 .address__icon {
     display: block;
     margin: 0 auto;
-    fill: 'titleColor';
+    fill: $titleColor;
 }
 
 

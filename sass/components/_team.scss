@@ -1,7 +1,5 @@
-@import 'utils/variables.scss'; 
-
 .team {
-    background-color: 'btnColor';
+    background-color: $btnColor;
 
     &__list {
         display: flex;
@@ -17,7 +15,7 @@
     &__content {
         width: 270px;
         margin: 0;
-        background-color: 'titleColor';
+        background-color: $titleColor;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius:  0px 0px 4px 4px;
     }
@@ -41,12 +39,12 @@
         line-height: 1.19;
         text-align: center;
         letter-spacing: 0.03em;
-        color: 'brandColor';
+        color: $brandColor;
     }
 
     &__job {
         font-weight: 400;
-        color: 'textColor';
+        color: $textColor;
         text-align: center;
     }
 
@@ -58,8 +56,8 @@
         border: none;
         border-radius: 50%;
         cursor: pointer;
-        background-color: 'titleColor';
-        color: 'iconColor';
+        background-color: $titleColor;
+        color: $iconColor;
         transition: background-color $delay $timingFunc, color $delay $timingFunc;
     }
 
@@ -68,8 +66,8 @@
     }
 
     &__btn:hover {
-        background-color: 'focusColor';
-        color: 'titleColor';
+        background-color: $focusColor;
+        color: $titleColor;
     }
 
     &__icon { 

@@ -1,5 +1,3 @@
-@import 'utils/variables.scss';
-
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -22,7 +20,7 @@
     content: "";
     width: 270px;
     height: 120px;
-    background: 'btnColor' url(../images/antenna.svg) no-repeat center;
+    background: $btnColor url(../images/antenna.svg) no-repeat center;
     display: block;
     margin-bottom: 30px;
     }
@@ -35,7 +33,7 @@
         font-size: 14px;
         line-height: 1.7;
         letter-spacing: 0.03em;
-        color: 'textColor';
+        color: $textColor;
     }
 
     &__title {
@@ -44,7 +42,7 @@
         line-height: 1.15;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: 'brandColor';
+        color: $brandColor;
 
         margin-bottom: 10px;
     }
